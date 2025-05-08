@@ -10,25 +10,19 @@
       font-family: 'Segoe UI', sans-serif;
       background-color: #0e0e0e;
       color: white;
-      padding: 40px 20px;
+      padding: 0;
+      margin: 0;
       text-align: center;
+      padding-bottom: 80px;
     }
 
     .header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      padding: 40px 20px 10px;
     }
 
     .logo {
       max-width: 220px;
       margin-bottom: 20px;
-    }
-
-    .banner {
-      max-width: 300px;
-      margin-top: 20px;
     }
 
     h1 {
@@ -37,16 +31,39 @@
       color: #FF3333;
     }
 
+    .main-section {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+    }
+
+    .banner {
+      flex: 0 0 auto;
+      display: block;
+    }
+
+    .banner img {
+      height: 100%;
+      max-height: 100%;
+      width: auto;
+      display: block;
+    }
+
+    .tracklist {
+      flex: 0 0 auto;
+    }
+
     table {
-      margin: 30px auto;
       border-collapse: collapse;
-      width: 90%;
-      max-width: 800px;
+      width: 100%;
+      max-width: 600px;
     }
 
     th, td {
       padding: 12px 20px;
       border: 1px solid #444;
+      text-align: left;
     }
 
     td a {
@@ -58,42 +75,60 @@
     tr:hover {
       background-color: #ff0000;
     }
+
+    @media (max-width: 900px) {
+      .main-section {
+        flex-direction: column;
+        align-items: center;
+      }
+      .banner img {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+      }
+    }
   </style>
 </head>
 <body>
 
   <div class="header">
+
     <a href="https://www.youtube.com/@knightsofnicko" target="_blank">
       <img src="logo.png" alt="Knights of Nicko Logo" class="logo">
     </a>
-    
+  
     <h1>Knights of Nicko - Past, Present and Future (2025)</h1>
-    <img src="banner.gif" alt="Banner" class="banner">
   </div>
 
-  <p></p>
-  <table>
-    <tr><td align="left">⚔️ <a href="video1.html">1 - Sir Galahad</a></td></tr>
-    <tr><td align="left">⚔️ <a href="video2.html">2 - The Warriors Revenge - Part I</a></td></tr>
-    <tr><td align="left">⚔️ <a href="video3.html">3 - The Warriors Revenge - Part II</a></td></tr>
-    <tr><td align="left">⚔️ <a href="video4.html">4 - Sanctum Sacrificium</a></td></tr>
-    <tr><td align="left">⚔️ <a href="video5.html">5 - The Horn of Erebor</a></td></tr>
-    <tr><td align="left">⚔️ <a href="video6.html">6 - Not The Last</a></td></tr>
-    <tr><td align="left">⚔️ <a href="video7.html">7 - NPC</a></td></tr>
-    <tr><td align="left">⚔️ <a href="video8.html">8 - In The Forest</a></td></tr>
-    <tr><td align="left">⚔️ <a href="video9.html">9 - World of Chatter</a></td></tr>
-    <tr><td align="left">⚔️ <a href="video10.html">10 - Cyberpunk: Immortal Soul</a></td></tr>
-    <tr><td align="left">⚔️ <a href="video11.html">11 - Selva Brasilis</a></td></tr>
-    <tr><td align="left">⚔️ <a href="video12.html">12 - Trying to Get Us</a></td></tr>
-    <tr><td align="left">⚔️ <a href="video13.html">13 - Always Look on The Bright Side of Life</a></td></tr>
-    <tr><td align="left">⚔️ <a href="video14.html">14 - We go</a></td></tr>
-  </table>
-
-  <footer>
-    <a href="https://timbabo.knightsofnicko.com" target="_blank">
-      <img src="tbrlogo.png" alt="Timbabo Records Logo">
-    </a>
-  </footer>
-
+  <div class="main-section">
+    <div class="banner">
+      <img src="banner.gif" alt="Banner Animado">
+      
+      <div align="center">
+        <a href="https://timbabo.knightsofnicko.com" target="_blank" align="center">
+          <img src="tbrlogo.png" alt="Timbabo Records Logo">
+        </a>   
+      </div>
+    </div>
+    <div class="tracklist">
+      <table>
+        <tr><th>Track</th><th>Title</th><th></th></tr>
+        <tr><td><a href="video1.html">1</a></td><td><a href="video1.html">Sir Galahad</a></td><td><a href="video1.html">⚔️</a></td></tr>
+        <tr><td><a href="video2.html">2</a></td><td><a href="video2.html">The Warriors Revenge - Part I</a></td><td><a href="video2.html">⚔️</a></td></tr>
+        <tr><td><a href="video3.html">3</a></td><td><a href="video3.html">The Warriors Revenge - Part II</a></td><td><a href="video3.html">⚔️</a></td></tr>
+        <tr><td><a href="video4.html">4</a></td><td><a href="video4.html">Sanctum Sacrificium</a></td><td><a href="video4.html">⚔️</a></td></tr>
+        <tr><td><a href="video5.html">5</a></td><td><a href="video5.html">The Horn of Erebor</a></td><td><a href="video5.html">⚔️</a></td></tr>
+        <tr><td><a href="video6.html">6</a></td><td><a href="video6.html">Not The Last</a></td><td><a href="video6.html">⚔️</a></td></tr>
+        <tr><td><a href="video7.html">7</a></td><td><a href="video7.html">NPC</a></td><td><a href="video7.html">⚔️</a></td></tr>
+        <tr><td><a href="video8.html">8</a></td><td><a href="video8.html">In The Forest</a></td><td><a href="video8.html">⚔️</a></td></tr>
+        <tr><td><a href="video9.html">9</a></td><td><a href="video9.html">World of Chatter</a></td><td><a href="video9.html">⚔️</a></td></tr>
+        <tr><td><a href="video10.html">10</a></td><td><a href="video10.html">Cyberpunk: Immortal Soul</a></td><td><a href="video10.html">⚔️</a></td></tr>
+        <tr><td><a href="video11.html">11</a></td><td><a href="video11.html">Selva Brasilis</a></td><td><a href="video11.html">⚔️</a></td></tr>
+        <tr><td><a href="video12.html">12</a></td><td><a href="video12.html">Trying to Get Us</a></td><td><a href="video12.html">⚔️</a></td></tr>
+        <tr><td><a href="video13.html">13</a></td><td><a href="video13.html">Always Look on The Bright Side of Life</a></td><td><a href="video13.html">⚔️</a></td></tr>
+        <tr><td><a href="video14.html">14</a></td><td><a href="video14.html">We go</a></td><td><a href="video14.html">⚔️</a></td></tr>
+      </table>
+    </div>
+  </div>
 </body>
 </html>
