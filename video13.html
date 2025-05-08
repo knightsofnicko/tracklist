@@ -1,11 +1,12 @@
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Knights of Nicko - Always Look on The Bright Side of Life</title>
-      <style>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Knights of Nicko - Always Look on The Bright Side of Life</title>
+<style>
         body {
           font-family: Arial, sans-serif;
           background-color: #121212;
@@ -30,23 +31,67 @@
           font-size: 16px;
           margin: 0 10px;
         }
-      </style>
-    </head>
-    <body>
-      <h1>Knights of Nicko - Always Look on The Bright Side of Life</h1>
+      
+.video-header {
+  background-color: #1a1a1a;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.video-header .logo {
+  height: 160px;
+  object-fit: contain;
+}
+.video-footer {
+  margin-top: 50px;
+  padding: 15px;
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  border-top: 1px solid #333;
+}
+.video-footer img {
+  height: 60px;
+  object-fit: contain;
+}
+body {
+padding-bottom: 80px;
+      padding-top: 170px; /* espaço para o header fixo */
+}
+</style>
+</head>
+<body>
+<div class="video-header">
+<a href="https://www.youtube.com/@knightsofnicko" target="_blank">
+<img alt="Knights of Nicko Logo" class="logo" src="logo.png"/>
+</a>
+</div>
 
-      <!-- Embed the video -->
-      <iframe src="https://www.youtube.com/embed/Y_22X4AvDTw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h1>Knights of Nicko - Always Look on The Bright Side of Life</h1>
+<!-- Embed the video -->
+<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/Y_22X4AvDTw"></iframe>
+<div class="buttons">
+<!-- Previous button, if not the first video -->
+<a href="video12.html">Previous</a>
+<!-- Next button, if not the last video -->
+<a href="video14.html">Next</a>
+<!-- Back button to the main menu -->
+<a href="index.html">Back</a>
+</div>
 
-      <div class="buttons">
-        <!-- Previous button, if not the first video -->
-        <a href="video12.html">Previous</a>
-        <!-- Next button, if not the last video -->
-        <a href="video14.html">Next</a>
-        <!-- Back button to the main menu -->
-        <a href="index.html">Back</a>
-      </div>
-
-    </body>
-    </html>
-    
+<footer class="video-footer">
+<a href="https://timbabo.knightsofnicko.com" target="_blank">
+<img alt="Timbabo Records Logo" src="tbrlogo.png"/>
+</a>
+</footer>
+</body>
+</html>

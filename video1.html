@@ -1,52 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Knights of Nicko - Sir Galahad</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: white;
+      margin: 0;
+      padding-top: 80px;
+      text-align: center;
+      padding-bottom: 80px;
+      padding-top: 170px; /* espaço para o header fixo */      
+    }
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Knights of Nicko - Sir Galahad</title>
-      <style>
-        body {
-          font-family: Arial, sans-serif;
-          background-color: #121212;
-          color: white;
-          padding: 20px;
-          text-align: center;
-        }
-        iframe {
-          width: 80%;
-          height: 450px;
-          margin-top: 20px;
-        }
-        .buttons {
-          margin-top: 20px;
-        }
-        .buttons a {
-          padding: 10px 20px;
-          background-color: #FF0000;
-          color: white;
-          text-decoration: none;
-          border-radius: 5px;
-          font-size: 16px;
-          margin: 0 10px;
-        }
-      </style>
-    </head>
-    <body>
-      <h1>Knights of Nicko - Sir Galahad</h1>
+    .video-header {
+      background-color: #1a1a1a;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid #333;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
 
-      <!-- Embed the video -->
-      <iframe src="https://www.youtube.com/embed/4C-iYTpGNTI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    .video-header .logo {
+      height: 160px;
+      object-fit: contain;
+    }
 
-      <div class="buttons">
-        <!-- Previous button, if not the first video -->
-        
-        <!-- Next button, if not the last video -->
-        <a href="video2.html">Next</a>
-        <!-- Back button to the main menu -->
-        <a href="index.html">Back</a>
-      </div>
+    iframe {
+      width: 80%;
+      height: 450px;
+      margin-top: 20px;
+      border: none;
+    }
 
-    </body>
-    </html>
-    
+    .buttons {
+      margin-top: 20px;
+    }
+
+    .buttons a {
+      padding: 10px 20px;
+      background-color: #FF0000;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      margin: 0 10px;
+    }
+
+    .video-footer {
+      margin-top: 40px;
+      padding: 15px;
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      align-items: center;
+      border-top: 1px solid #333;
+    }
+
+    .video-footer img {
+      height: 60px;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="video-header">  
+    <a href="https://www.youtube.com/@knightsofnicko" target="_blank">
+      <img src="logo.png" alt="Knights of Nicko Logo" class="logo" />
+    </a>
+  </div>
+
+  <h1>Knights of Nicko - Sir Galahad</h1>
+
+  <iframe src="https://www.youtube.com/embed/4C-iYTpGNTI" allowfullscreen></iframe>
+
+  <div class="buttons">
+    <a href="video2.html">Next</a>
+    <a href="index.html">Back</a>
+  </div>
+
+  <footer class="video-footer">
+    <a href="https://timbabo.knightsofnicko.com" target="_blank">
+      <img src="tbrlogo.png" alt="Timbabo Records Logo">
+    </a>
+  </footer>
+
+</body>
+</html>

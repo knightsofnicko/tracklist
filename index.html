@@ -14,6 +14,7 @@
       margin: 0;
       text-align: center;
       padding-bottom: 80px;
+      padding-top: 160px; /* espaço para o header fixo */
     }
 
     .header {
@@ -102,17 +103,36 @@
     .video-footer img {
       height: 80px;
       object-fit: contain;
-    }          
+    }       
+
+    .video-header {
+      background-color: #1a1a1a;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid #333;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .video-header img {
+      height: 160px;
+      object-fit: contain;
+    }
+
   </style>
 </head>
 <body>
-
-  <div class="header">
-
+  <div class="video-header">  
     <a href="https://www.youtube.com/@knightsofnicko" target="_blank">
       <img src="logo.png" alt="Knights of Nicko Logo" class="logo">
     </a>
-  
+  </div>
+  <div class="header">  
     <h1>Knights of Nicko - Past, Present and Future (2025)</h1>
   </div>
 
