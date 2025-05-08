@@ -17,19 +17,20 @@
       padding-top: 170px; /* espaço para o header fixo */      
     }
 
-    .video-header {
-      background-color: #1a1a1a;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-bottom: 1px solid #333;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 1000;
-    }
+.video-header {
+  background-color: #1a1a1a;
+  padding: 10px 0;                          /* remove espaçamento lateral */
+  display: flex;
+  justify-content: center;                 /* centraliza horizontalmente */
+  align-items: center;                     /* centraliza verticalmente */
+  border-bottom: 1px solid #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 
     .video-header .logo {
       height: 160px;

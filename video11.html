@@ -34,10 +34,10 @@
       
 .video-header {
   background-color: #1a1a1a;
-  padding: 10px 20px;
+  padding: 10px 0;                          /* remove espaçamento lateral */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center;                 /* centraliza horizontalmente */
+  align-items: center;                     /* centraliza verticalmente */
   border-bottom: 1px solid #333;
   position: fixed;
   top: 0;
@@ -45,6 +45,7 @@
   width: 100%;
   z-index: 1000;
 }
+
 .video-header .logo {
   height: 160px;
   object-fit: contain;
