@@ -109,7 +109,6 @@
       background-color: #1a1a1a;
       padding: 10px 0;                          /* remove espaçamento lateral */
       display: flex;
-      justify-content: center;                 /* centraliza horizontalmente */
       align-items: center;                     /* centraliza verticalmente */
       border-bottom: 1px solid #333;
       position: fixed;
@@ -122,7 +121,22 @@
     .video-header img {
       height: 160px;
       object-fit: contain;
+      margin: 0 auto;
     }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+    }
+    
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }    
 
   </style>
 </head>
@@ -136,8 +150,8 @@
     <h1>Knights of Nicko - Past, Present and Future (2025)</h1>
   </div>
 
-  <div class="main-section">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/RX5f-yhpD74?si=tXWG7oPx8zb1lJmi&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/RX5f-yhpD74?si=tXWG7oPx8zb1lJmi&amp;controls=0;rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
     <footer class="video-footer">
       <a href="https://www.youtube.com/raphabpc" target="_blank">
